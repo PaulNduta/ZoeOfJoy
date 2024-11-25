@@ -22,6 +22,7 @@
   font-size: 30px;
   font-weight: bold;
   animation: slideInLeft 0.5s ease-in-out;
+  text-align: center;
 }
 
 .helpline-content-wrapper {
