@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="images/zoj.png">
   <!-- Bootstrap Icons CDN link -->
   <link rel="stylesheet" href="Css-Files/Rateus.css">
@@ -60,6 +60,7 @@
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
   </script>
     <script src="./js/emailvalidation.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
   <!--<script src="js/caduceus.js"></script>
@@ -85,15 +86,10 @@
       <ul class="nav_link vis-h">
         <li><a href="index.html"><i class="bi bi-house-door-fill"></i> Home</a></li>
         <li><a href="about.html"><i class="bi bi-info-circle-fill"></i> About Us</a></li>
-        <li><a href="index.html"><i class="bi bi-newspaper"></i> Gallery</a></li>
-        <li><a href="index.html"><i class="bi bi-gear"></i> Service</a></li>
-        <!--<li><a href="portal.html"><i class="bi bi-person"></i> Patient Portal</a></li>-->
-        <li><a href="#index.html"<!--Html-Files/appointment.html"--><i class="bi bi-person"></i> Appointment</a></li>
-        <li><a href="#doctors"><i class="bi bi-person-circle"></i>  Our Staff</a></li>
-        <li><a href="#contact"><i class="bi bi-telephone"></i> Contact us</a></li>
-        <!--<li><a href="#feedback"><i class="bi bi-star"></i> Rate Us</a></li>-->
-        <!--<li><a href="log/login.html"><i class="bi bi-box-arrow-right"></i> Sign in/Sign up</a></li>-->
-        <!--<a href="Html-Files/Doctor Experience.html"><button class="btn1">Find a Doctor</button></a>-->
+        <li><a href="news.html"><i class="bi bi-camera"></i> Gallery</a></li>
+        <li><a href="dex.html"><i class="bi bi-gear"></i> Service</a></li>
+        <li><a href="helpline.html"--><i class="bi bi-person"></i> Pricing</a></li>
+        <li><a href="helpline.html"><i class="bi bi-telephone"></i> Contact us</a></li>
 
       </ul>
     </nav>
@@ -112,11 +108,14 @@
       </a>
     </div>
   </header>
-  <div class="container" style="display:flex ;">
-    <div class="content">
   
+  <div class="container" style="display:flex ;" id="hero">
+    <!--<video autoplay muted loop id="myVideo">
+      <source src="./images/bgvid.mp4" type="video/mp4">
+    </video>-->
+    <div class="content">
     <h1 style="font-size: 65px; margin-top: 100px; padding: 0 0 0 0;">
-        Welcome to <br><span style="color: #55a5ea;">ZoeOfJoy!</span> <br /> Your one-stop <br> Homecare destination
+      <span style="color: #55a5ea;">Welcome</span> to <br><span style="color: #55a5ea;">ZoeOfJoy!</span> <br /> Your one-stop <br> Homecare destination
     </h1>
 </div>
 
@@ -131,28 +130,28 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon1"><i class="fa-solid fa-route"></i></div>
-              <h4 class="title"><a href="checkup.html"> Schedule a Tour</a></h4>
+              <h4 class="title"><a href="helpline.html"> Schedule a Tour</a></h4>
               <p class="description">Let us show you around our home!</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">          
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
               <div class="icon2"><i class="fa-solid fa-calendar-check"></i></div>
-              <h4 class="title"><a href="test.html">Schedule An Appointment</a></h4>
+              <h4 class="title"><a href="helpline.html">Schedule An Appointment</a></h4>
               <p class="description"> Set your appointment to discuss your needs with us personally.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="icon3"><i class="fa-solid fa-handshake"></i></div>
-              <h4 class="title"><a href="">Meet Our Staff</a></h4>
+              <h4 class="title"><a href="about.html">Meet Our Staff</a></h4>
               <p class="description">Learn more about the compassionate people that make up our team.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon4"><i class="fas fa-hand-holding-medical"></i></div>
-              <h4 class="title"><a href="medicine.html">Submit your Referrals</a></h4>
+              <h4 class="title"><a href="helpline.html">Submit your Referrals</a></h4>
               <p class="description">Refer your friends or families who want to stay in a comfortable living environment.
               </p>
             </div>
@@ -171,16 +170,16 @@
           <div class="sec-2">
             <div class="a-1">
               <div class="a-l">
-               <!-- <div class="h-icon"><svg width="36px" height="36px" viewBox="0 0 24 24" fill="none"
+               <div class="h-icon"><svg width="36px" height="36px" viewBox="0 0 24 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
                       stroke="#2F7F81" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg></div>-->
+                  </svg></div>
               </div>
               <div class="a-r">
                 <div class="head-1">OUR MISSION</div>
-                <div class="head-2">At Blue Haven, we offer a family-like environment with higher standards of care for seniors that cannot live at their own home any longer.</div>
+                <div class="head-2">At ZoeOfJoy, our mission is to provide a nurturing, safe, and compassionate home for adults, where every individual can thrive in an environment filled with respect, dignity, and care. We are committed to offering personalized support tailored to each resident's needs, enhancing their quality of life through meaningful activities, social connections, and holistic care. Our focus is on creating a joyful and fulfilling life for every member of our community.</div>
               </div>
             </div>
             <div class="a-2">
@@ -198,7 +197,7 @@
               </div>
               <div class="b-r">
                 <div class="head-1">OUR VISION</div>
-                <div class="head-2">Our vision is to be the leading provider of senior living options in the communities we serve, offering every individual with a safe and comfortable environment that feels like home.</div>
+                <div class="head-2">Our vision at ZoeOfJoy is to be a leading adult home where individuals can experience the highest level of care, respect, and happiness. We aim to redefine what it means to age gracefully, providing an enriching environment that fosters independence, well-being, and a sense of belonging. By building a community rooted in kindness and mutual support, we aspire to create a space where residents feel empowered, engaged, and truly at home.</div>
               </div>
             </div>
             <div class="a-3">
@@ -285,21 +284,21 @@
         <div class="align-items-stretch ">
           <div class="icon-box">
             <div class="icon"><i class="fas fa-pills"></i></div>
-            <h4><a href="/Html-Files/input.html">Dementia and Alzheimer's Care</a></h4>
+            <h4><a href="dex.html">Dementia and Alzheimer's Care</a></h4>
             <p>Specialized care for your health</p>
           </div>
         </div>
         <div class="align-items-stretch ">
           <div class="icon-box">
             <div class="icon"><i class="fa-solid fa-dumbbell"></i></div>
-            <h4><a href="https://www.1mg.com">Personalized Activities and Exercise</a></h4>
+            <h4><a href="dex.html">Personalized Activities and Exercise</a></h4>
             <p>Recreational activities for your enjoyment</p>
           </div>
         </div>
         <div class="align-items-stretch ">
           <div class="icon-box">
             <div class="icon"><i class="fa-solid fa-broom"></i></div>
-            <h4><a href="">Housekeeping and daily Laundry Services </a></h4>
+            <h4><a href="dex.html">Housekeeping and daily Laundry Services </a></h4>
             <p>Comfortable and clean homes
             </p>
           </div>
@@ -307,7 +306,7 @@
         <div class="align-items-stretch ">
           <div class="icon-box">
             <div class="icon"><i class="fa-solid fa-carrot"></i></div>
-            <h4><a href="./Html-Files/blood.html">Three Nutritious home cooked meals</a></h4>
+            <h4><a href="dex.html">Three Nutritious home cooked meals</a></h4>
             <p>Healthy meals for your dietary needs</p>
           </div>
         </div>
@@ -316,7 +315,7 @@
             <div class="icon"><img src="images/zoe5.jpg" class="about-img">
               <!--<i class="fas fa-wheelchair"></i>-->
             </div>
-            <h4><a href="">Disabled Person</a></h4>
+            <h4><a href="dex.html">Disabled Person</a></h4>
             <p>Convenient medical care is here. Wheelchair accessible home ammenities,
               resources and support tailored to the needs of individuals with disabilities, ensuring a seamless
               experience for everyone.</p>
@@ -325,7 +324,7 @@
         <div class="align-items-stretch">
           <div class="icon-box">
             <div class="icon"><i class="fas fa-notes-medical"></i></div>
-            <h4><a href="https://www.medicalnewstoday.com/">Health Post</a></h4>
+            <h4><a href="dex.html">Health Post</a></h4>
             <p>Weekly, monthly, yearly or each day, A home Doctor is always on site.</p>
           </div>
         </div>
@@ -512,7 +511,7 @@
       <!--Google map-->
       <div class="mapouter">
           <div class="gmap_canvas">
-              <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3023.415234812487!2d-73.9999069!3d40.7308878!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25990e23d7e8d%3A0xfa615edfd1b67e18!2sWashington%20Square%20Park!5e0!3m2!1sen!2ske!4v1730980739500!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2672.093716506376!2d-122.2214432512168!3d47.95391181230485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490008bcd274a2b%3A0x57f1e603b9b39acc!2s614%2048th%20St%20SE%2C%20Everett%2C%20WA%2098203%2C%20USA!5e0!3m2!1sen!2ske!4v1732346845136!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               <a href="https://www.fnfgo.com/">FNF Mods</a>
           </div>
       </div>
@@ -523,7 +522,7 @@
                   <div class="address">
                       <i class="fa fa-location-dot"></i>
                       <h4>Location:</h4>
-                      <p><a href="https://www.google.com/maps/place/Washington+Square+Park/@40.7308878,-73.9999069,17z/data=!3m1!4b1!4m15!1m7!3m6!1s0x89c25990e23d7e8d:0xfa615edfd1b67e18!2sWashington+Square+Park!8m2!3d40.7308838!4d-73.997332!16zL20vMDM3c25f!3m6!1s0x89c25990e23d7e8d:0xfa615edfd1b67e18!8m2!3d40.7308838!4d-73.997332!10e1!16zL20vMDM3c25f?authuser=0&entry=ttu&g_ep=EgoyMDI0MTEwNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">####, D.C</a></p>
+                      <p><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2672.093716506376!2d-122.2214432512168!3d47.95391181230485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490008bcd274a2b%3A0x57f1e603b9b39acc!2s614%2048th%20St%20SE%2C%20Everett%2C%20WA%2098203%2C%20USA!5e0!3m2!1sen!2ske!4v1732346845136!5m2!1sen!2ske" target="_blank">Everett, W.A</a></p>
                   </div>
                   <div class="email">
                       <i class="fa fa-envelope"></i>
@@ -626,95 +625,78 @@
   <!-- ############### Footer ############### -->
   <footer>
     <div class="footer-wrapper">
-      <div class="footer-columns">
-        <div class="other-columns">
+        <div class="footer-columns">
+            <div class="other-columns">
           <section>
             <h4>Quick Links</h4><br>
             <ul class="links">
               <li><a href="index.html">Home</a></li>
               <li><a href="#about">About Us</a></li>
               <li><a href="index.html#contact">Contact Us</a></li>
-              <!--<li><a href="dex.html">Services</a></li>-->
-              <!--<li><a href="./faq.html">FAQ</a></li>-->
+              <li><a href="dex.html">Services</a></li>
             </ul>
           </section>
           <section>
             <h4>Explore</h4><br>
             <ul class="links">
-              <li><a href="#"Html-Files/appointment.html">Appointment</a></li>
-              <!--<li><a href="portal.html">Patient Portal</a></li>-->
-              <li><a href="#"log/login.html">Login account</a></li>
-              <li><a href="#"helpline.html">Helplines</a></li>
+              <li><a href="helpline.html">Appointment</a></li>
+              <li><a href="helpline.html">Helplines</a></li>
               <li><a href="index.html#contact">Location</a></li>
             </ul>
           </section>
           <section>
             <h4>Legal</h4><br>
             <ul class="links">
-              <!--<li><a href="Html-Files/customer_agreement.html">Customer Agreement</a></li>-->
-              <!--<li><a href="Html-Files/privacy_policy_page.html">Privacy Policy</a></li>-->
-              <li><a href="#"Html-Files/terms_and_conditions.html">Terms and Conditions</a></li>
+              <li><a href="#">Customer Agreement</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
               <li><a href="#">GDPR</a></li>
-
-
+              <li><a href="#">Security</a></li>
             </ul>
           </section>
-       <section class="footer-col" >
-      <div>
-      <h4>ZoeOfJoy Newsletter</h4><br>
-      <p>
-        Subscribe to our newsletter for a weekly dose
-        of news, updates, helpful tips, and
-        exclusive offers.
-      </p>
-    </div>
-      <form action="#" class="subscribe-form" id="subscribeForm">
-        <input type="email" id="emailInput" placeholder="Your email" required>
-        <button type="submit" id="subscribeButton" class="b">SUBSCRIBE</button>
-      </form>
-         </section>
-          <div id="subscribeBanner">
-            <p>Thanks for subscribing!</p>
-          </div>
-          <script src="js/footersubcribejs.js"></script>
+                <section class="footer-col">
+                  <h4>ZoeOfJoy Newsletter</h4><br>
+                  <p>
+                    Subscribe to our newsletter for a weekly dose
+                    of news, updates, helpful tips, and
+                    exclusive offers.
+                  </p>
+                  <form action="#" class="subscribe-form">
+                    <input type="text" placeholder="Your email" required>
+                    <button type="submit" style="color: black;" id="s">SUBSCRIBE</button>
+                  </form>
+                </section>
+            </div>
         </div>
-      </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-bottom-wrapper">
-        <small id="ss">© <span id="year"></span><span> ZoeOfJoy</span>&nbsp;| All Rights
-          Reserved Made with ❤️ by ZoeOfJoy</small>
-        <div class="social-wrapper">
-          <div class="social-links">
-            <div style="margin-left: 300px;font-family: sans-serif;"><i>Follow&nbsp;Us&nbsp;:&nbsp;</i></div>
-            <div  id="insta">
-            <a href="https://www.instagram.com" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </div>
-          <div id="twit">
-            <a  href="https://www.twitter.com" target="_blank">
-              <i class="bi bi-twitter-x"></i>
-            </a>
-          </div>
-          <div id="git">
-            <a  href="https://github.com/" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-          <div id="linkd">
-            <a  href="https://www.linkedin.com" target="_blank">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </div>
-            <div id="fb"><a  href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></div>
-           <div id="phn"> <a  href="+91 1234567890" title="+91 1234567890" target="_blank"><i class="fa-solid fa-phone"></i></a></div>
-            <div id="mail1" ><a  href="info@ZoeOfJoy.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></div>
-          </div>
-        </div>
+        <div class="footer-bottom-wrapper">
+          <small id="ss">© <span id="year"></span><span> ZoeOfJoy</span>&nbsp;| All Rights
+            Reserved Made with ❤️ by PaulNduta</small>
+              <style>
+                .social-wrapper a div i {
+                  color: #afb6c7;
+                }
+               .social-wrapper a div i:hover {
+                 color: #fff;
+                }
+              </style>
+            <div class="social-wrapper">
+              <div class="social-links">
+              <div style="margin-left: 100px;font-family: sans-serif;"><i>Follow&nbsp;Us&nbsp;:&nbsp;</i></div>
+              <a href="https://www.facebook.com/" target="_blank"><div><i class="fa-brands fa-facebook-f"></i></div></a>
+              <a href="https://www.twitter.com" target="_blank"><div><i class="fa-brands fa-twitter"></i></div></a>
+              <a href="https://www.linkedin.com" target="_blank"><div><i class="fa-brands fa-linkedin"></i></div></a>
+              <a href="https://www.linkedin.com" target="_blank"><div><i class="fa-brands fa-instagram"></i></div></a>
+              <a href="https://github.com/" target="_blank"><div><i class="fa-brands fa-github"></i></div></a>
+              <a href="+1425 971 0688" title="+1425 971 0688" target="_blank"><div><i class="fa-solid fa-phone"></i></div></a>
+              <a href="ZoeOfJoy@gmail.com" target="_blank"><div><i class="fa-solid fa-envelope"></i></div></a>
+              </div>
+            </div>
       </div>
     </div>
-  </footer>
+</footer>
+
   <div id="back-to-top-container">
     <div class="circle">
       <svg id="back-to-top" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -752,7 +734,7 @@
   <script src="swiper-bundle.min.js"></script>
   <script src="https://mediafiles.botpress.cloud/b1d766f9-2fd0-4a60-96bb-fc1f494d156c/webchat/config.js" defer></script>
   <script src="js/chatbotjs.js"></script>
-  <script src="https://www.chatbase.co/embed.min.js" chatbotId="xjRGZgxJziSoHQ1T1twl6" domain="www.chatbase.co" defer>
+  <script src="https://www.chatbase.co/embed.min.js" chatbotId="eek361Sj1Sb_FQ0r_e3ue" domain="www.chatbase.co" defer>
   </script>
   <script src="js/revealelementsonscrolljsfor_index_html.js"></script>
   <script src="js/loaderjs.js"></script>
@@ -761,3 +743,4 @@
   <script src="js/patientportal_loginjs.js"></script>
   <script src="js/popupfeedback.js"></script>
 </body>
+</html>

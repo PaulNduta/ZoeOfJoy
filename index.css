@@ -55,7 +55,7 @@ html {
     padding: 0;
     justify-content: space-evenly;
     gap: 25px;
-    background-color: #003366;
+    /*background-color: #003366;*/
 }
 .services .icon-box{
     height: 400px;
@@ -1161,4 +1161,17 @@ body {
   /*Effect to the image in aboutus section**/
   .about-img {
     filter: drop-shadow(30px 30px 30px rgba(17, 133, 137, 0.683));
+  }
+
+  #myVideo {
+    position:absolute;
+    opacity: 30%;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100vh;
+  }
+  
+  #hero{
+    background-image: url("./images/herobg.png");
   }

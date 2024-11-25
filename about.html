@@ -126,6 +126,7 @@ button:hover::before {
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
   <link rel="stylesheet" href="./Css-Files/aboutus.css" />
+  <link rel="stylesheet" href="Css-Files/caduceus.css">
   <link rel="stylesheet" href="./Css-Files/testimonial.css" />
   <script src="chatboxx.js" defer></script>
   <style>
@@ -259,22 +260,32 @@ button:hover::before {
       <img id="rd-logo" style="width: 90px; height: auto;" src="images/zoj.png">
     </div>
     <nav class="nav_menu">
-      <ul class="nav_link vis-h">
-        <li><a href="index.html"><i class="bi bi-house-door-fill"></i> Home</a></li>
-        <li><a href="index.html#about"><i class="bi bi-info-circle-fill"></i> About</a></li>
-        <li><a href="#"news.html"><i class="bi bi-newspaper"></i>Gallery</a></li>
-        <li><a href="#"dex.html"><i class="bi bi-gear"></i> Service</a></li>
-        <li><a href="index.html#contact"><i class="bi bi-telephone"></i>Contact us</a></li>
-
-       
-      </ul>
-      <div class="hamburger">
+      <div class="hamburger" onclick="toggleMenu()">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
       </div>
+      <div class="mobile-logo-text">ZoeOfJoy</div>
+      <ul class="nav_link vis-h">
+        <li><a href="index.html"><i class="bi bi-house-door-fill"></i> Home</a></li>
+        <li><a href="about.html"><i class="bi bi-info-circle-fill"></i> About Us</a></li>
+        <li><a href="news.html"><i class="bi bi-camera"></i> Gallery</a></li>
+        <li><a href="dex.html"><i class="bi bi-gear"></i> Service</a></li>
+        <li><a href="helpline.html"--><i class="bi bi-person"></i> Pricing</a></li>
+        <li><a href="helpline.html"><i class="bi bi-telephone"></i> Contact us</a></li>
+
+       
+      </ul>
+      
     </nav>
   </header>
+  <script>
+    function toggleMenu() {
+  const navLinks = document.querySelector('.nav_link');
+  navLinks.classList.toggle('active');
+}
+
+  </script>
   <p style="color: black;"><p><p><p><p><p><p><p><p><p>
     <p><p><p>p
 
@@ -288,47 +299,30 @@ button:hover::before {
     </p></p></p>
   </p></p></p></p></p></p></p></p></p></p>
   <section class="about">
-    <h2 style="color: white;" class="h">About ZoeOfJoy</h2>
+    <h2 style="color: white;" class="h">About ZoeOfJoy<hr></h2>
+    <hr>
     <p style="color: grey;">
-      <b>ZoeOfJoy</b> is a provider of senior living options in Washington, helping seniors and their families meet their unique needs. Our community has everything seniors need to stay active and healthy, providing an easy and smooth transition for our residents and helping them feel secure and comfortable in our homes.
+      Welcome to ZoeOfJoy, a place where the well-being and happiness of our residents are at the heart of everything we do. Our adult home offers a peaceful, comfortable, and caring environment designed to meet the unique needs of every individual. With a team of dedicated professionals, we provide personalized care that includes health services, social engagement, and emotional support.
+At ZoeOfJoy, we understand that every person is unique, and we take the time to build a relationship with each resident, ensuring they feel heard and valued. Whether they need assistance with daily living activities or simply a supportive community to call home, we are here to make their journey as joyful and fulfilling as possible.</p>
+  </section>
 
-      We value each of our residents as individuals with unique needs, personalities, preferences, and abilities, offering around-the-clock care, assisting them with their daily activities, and monitoring them in case of emergencies. We also provide daily menus, recreational activities, on-site entertainment, and events to help them achieve their happiness, improve their independence, and help them stay engaged in life.
-      
-      Our goal is to allow your loved ones to live as independently as they can while providing a comprehensive care plan that addresses their personality, preferences, strengths, and current and past medical history. We help make appointments, prescriptions, medical recommendations, and coordinate with other healthcare providers to give them the highest level of quality care.
-      
-      At ZoeOfJoy, you can guarantee that your loved ones will have all the amenities and services that will help them enjoy their golden years.</p>
-  <!--</section>
-  <section class="stats-box">
-    <div class="stats-container">
-      <h2 style="color: grey">Our Stats</h2>
-      <div class="stats">
-        <div class="stat">
-          <h3 id="stat1"style="  color: black;
-          -webkit-text-fill-color: white; 
-          -webkit-text-stroke: 2px black;">0</h3>
-          <b><p style="color: #7c7b7b;" >Checkups Available</p></b>
-        </div>
-        <div class="stat">
-          <h3 id="stat2"style="color: black;
-          -webkit-text-fill-color: white; 
-          -webkit-text-stroke: 2px black;">0</h3>
-          <b><p style="color: #7c7b7b;">Genres Covered</p></b>
-        </div>
-        <div class="stat">
-            <h3 id="stat3" style="color: black;
-            -webkit-text-fill-color: white; 
-            -webkit-text-stroke: 2px black;">0</h3>
-            <b><p style="color: #7c7b7b;">Happy Patients</p></b>
-          </div>
-      </div>
-    </div>
-
-  </section>-->
-  <section class="team">
+  <section class="about">
+    <h2 style="color: white;" class="h">Our Policies<hr></h2>
+    <hr>
+    <h3 style="color:white" class="">1. Pets</h3>
+    <p style="color: grey;">
+      Zoe of Joy Adult Family Home LLC does not allow pets. This does not necessarily mean there are no pets in the facility, but that they do not allow residents to bring their own.</p>
+    <h3 style="color:white" class="">1. Smoking</h3>
+    <p style="color: grey;">
+      Zoe of Joy Adult Family Home LLC does not allow smoking on the premises, but they do allow the use of Vapor/E-cigarettes in designated areas. They have one or more designated areas outside where Vapor/E-cigarette users can vape away from the building and away from other residents. Vaping indoors or anywhere outside the designated areas is strictly prohibited.</p>
+  </section>
+  
+  <!--
+    <section class="team">
     <h2>Meet Our Team</h2>
     <div class="team-cards">
-      <!-- Team member cards will go here -->
-       <!--<a id="gitlin"  href="https://github.com/Anishkagupta04" style="text-decoration: none;">-->
+      <!-- Team member cards will go here 
+       <!--<a id="gitlin"  href="https://github.com/Anishkagupta04" style="text-decoration: none;">
       <div class="team-member" data-tilt>
         <img src="./images/WhatsApp Image 2024-07-23 at 18.59.53_ca6faccb.jpg" alt="Team Member 1" style="border-radius: 10px;">
         <div class="member-info">
@@ -336,7 +330,7 @@ button:hover::before {
           <p>Project Admin</p>
         </div>
       </div></a>
-     <!--<a id="gitlin" href="https://github.com/varshith257"style="text-decoration: none;">-->
+     
       <div class="team-member">
         <img src="./img/WhatsApp Image 2024-07-23 at 18.59.41_52314e5b.jpg" alt="Team Member 2" style="border-radius: 10px;">
         <div class="member-info">
@@ -350,12 +344,13 @@ button:hover::before {
       <section class="contributors">
         <h2>Our Contributors</h2>
         <div class="contributor-cards" id="contributor-cards">
-          <!-- Contributor cards will be inserted here -->
+          <!-- Contributor cards will be inserted here 
         </div>
         <div class="pagination" id="pagination" >
-          <!-- Pagination buttons will be inserted here -->
+          <!-- Pagination buttons will be inserted here 
         </div>
       </section>
+    -->
 
     <style>
       .contributors {
@@ -479,24 +474,22 @@ button:hover::before {
     </style>
     <footer>
       <div class="footer-wrapper">
-        <div class="footer-columns">
-          <div class="other-columns">
+          <div class="footer-columns">
+              <div class="other-columns">
             <section>
               <h4>Quick Links</h4><br>
               <ul class="links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="index.html#contact">Contact Us</a></li>
-                <li><a href="#">Services</a></li>
-                <!--<li><a href="index.html#doctors">Doctors</a></li>-->
-                <!--<li><a href="./faq.html">FAQ</a></li>-->
+                <li><a href="dex.html">Services</a></li>
               </ul>
             </section>
             <section>
               <h4>Explore</h4><br>
               <ul class="links">
-                <li><a href="#">Appointment</a></li>
-                <li><a href="#">Helplines</a></li>
+                <li><a href="helpline.html">Appointment</a></li>
+                <li><a href="helpline.html">Helplines</a></li>
                 <li><a href="index.html#contact">Location</a></li>
               </ul>
             </section>
@@ -504,116 +497,102 @@ button:hover::before {
               <h4>Legal</h4><br>
               <ul class="links">
                 <li><a href="#">Customer Agreement</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
                 <li><a href="#">GDPR</a></li>
                 <li><a href="#">Security</a></li>
-                <li><a href="#">Testimonials</a></li>
               </ul>
             </section>
-            
-         <section class="footer-col" >
-        <div>
-        <h4>ZoeOfJoy Newsletter</h4><br>
-        <p>
-          Subscribe to our newsletter for a weekly dose
-          of news, updates, helpful tips, and
-          exclusive offers.
-        </p>
-      </div>
-        <form action="#" class="subscribe-form">
-          <input type="email" placeholder="Your email" required>
-          <button type="submit">SUBSCRIBE</button>
-        </form>
-        <p class="confirmation-message">Thank you for subscribing!</p>
-         </section>
-        
-  
-            <script>
-              document.querySelector('.subscribe-form').addEventListener('submit', function (event) {
-                event.preventDefault(); // Prevent the form from submitting in the traditional way
-  
-                // Here you would normally send the form data to the server using fetch or XMLHttpRequest
-                // For demonstration purposes, we'll just show the confirmation message
-  
-                const confirmationMessage = document.querySelector('.confirmation-message');
-                confirmationMessage.style.display = 'block'; // Show the confirmation message
-  
-                // Clear the input field
-                this.querySelector('input[type="email"]').value = '';
-  
-                // Optionally, you can hide the confirmation message after a few seconds
-                setTimeout(() => {
-                  confirmationMessage.style.display = 'none';
-                }, 5000); // Hide after 5 seconds
-              });
-            </script>
-              
-              <script>
-                document.querySelector('.subscribe-form').addEventListener('submit', function(event) {
-                  event.preventDefault(); // Prevent the form from submitting in the traditional way
-              
-                  // Show the modal popup
-                  const modal = document.getElementById('popupModal');
-                  modal.style.display = 'block';
-              
-                  // Clear the input field
-                  this.querySelector('input[type="email"]').value = '';
-              
-                  // Hide the modal when the close button is clicked
-                  const closeModal = document.querySelector('.modal .close');
-                  closeModal.onclick = function() {
-                    modal.style.display = 'none';
-                  }
-                });
-              
-                // Hide the modal when clicking outside of it
-                window.onclick = function(event) {
-                  const modal = document.getElementById('popupModal');
-                  if (event.target == modal) {
-                    modal.style.display = 'none';
-                  }
-                }
-              </script>
-  
+                  <section class="footer-col">
+                    <h4>ZoeOfJoy Newsletter</h4><br>
+                    <p>
+                      Subscribe to our newsletter for a weekly dose
+                      of news, updates, helpful tips, and
+                      exclusive offers.
+                    </p>
+                    <form action="#" class="subscribe-form">
+                      <input type="text" placeholder="Your email" required>
+                      <button type="submit" style="color: black;" id="s">SUBSCRIBE</button>
+                    </form>
+                  </section>
+              </div>
           </div>
-        </div>
       </div>
-     
       <div class="footer-bottom">
-        <div class="footer-bottom-wrapper">
-          <small id="ss">© <span id="year"></span><span> ZoeOfJoy</span>&nbsp;| All Rights
-            Reserved Made with ❤️ by ZoeOfJoy</small>
-          <div class="social-wrapper">
-            <div class="social-links">
-              <div style="margin-left: 300px;font-family: sans-serif;"><i>Follow&nbsp;Us&nbsp;:&nbsp;</i></div>
-              <div  id="insta">
-              <a href="https://www.instagram.com" target="_blank">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </div>
-            <div id="twit">
-              <a  href="https://www.twitter.com" target="_blank">
-                <i class="bi bi-twitter-x"></i>
-              </a>
-            </div>
-            <div id="git">
-              <a  href="https://github.com/Anishkagupta04/ZoeOfJoy-HEALTHCARE-WEBSITE-" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-            <div id="linkd">
-              <a  href="https://www.linkedin.com" target="_blank">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </div>
-  
-              <div id="fb"><a  href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></div>
-             <div id="phn"> <a  href="+1425-971-0688" title="+1425-971-0688" target="_blank"><i class="fa-solid fa-phone"></i></a></div>
-              <div id="mail1" ><a  href="info@ZoeOfJoy.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></div>
-            </div>
-          </div>
+          <div class="footer-bottom-wrapper">
+            <small id="ss">© <span id="year"></span><span> ZoeOfJoy</span>&nbsp;| All Rights
+              Reserved Made with ❤️ by PaulNduta</small>
+                <style>
+                  .social-wrapper a div i {
+                    color: #afb6c7;
+                  }
+                 .social-wrapper a div i:hover {
+                   color: #fff;
+                  }
+                </style>
+              <div class="social-wrapper">
+                <div class="social-links">
+                <div style="margin-left: 100px;font-family: sans-serif;"><i>Follow&nbsp;Us&nbsp;:&nbsp;</i></div>
+                <a href="https://www.facebook.com/" target="_blank"><div><i class="fa-brands fa-facebook-f"></i></div></a>
+                <a href="https://www.twitter.com" target="_blank"><div><i class="fa-brands fa-twitter"></i></div></a>
+                <a href="https://www.linkedin.com" target="_blank"><div><i class="fa-brands fa-linkedin"></i></div></a>
+                <a href="https://www.linkedin.com" target="_blank"><div><i class="fa-brands fa-instagram"></i></div></a>
+                <a href="https://github.com/" target="_blank"><div><i class="fa-brands fa-github"></i></div></a>
+                <a href="+1425 971 0688" title="+1425 971 0688" target="_blank"><div><i class="fa-solid fa-phone"></i></div></a>
+                <a href="ZoeOfJoy@gmail.com" target="_blank"><div><i class="fa-solid fa-envelope"></i></div></a>
+                </div>
+              </div>
         </div>
       </div>
-    </footer>
+  </footer>
+
+    <script>
+      document.querySelector('.subscribe-form').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the form from submitting in the traditional way
+
+        // Here you would normally send the form data to the server using fetch or XMLHttpRequest
+        // For demonstration purposes, we'll just show the confirmation message
+
+        const confirmationMessage = document.querySelector('.confirmation-message');
+        confirmationMessage.style.display = 'block'; // Show the confirmation message
+
+        // Clear the input field
+        this.querySelector('input[type="email"]').value = '';
+
+        // Optionally, you can hide the confirmation message after a few seconds
+        setTimeout(() => {
+          confirmationMessage.style.display = 'none';
+        }, 5000); // Hide after 5 seconds
+      });
+    </script>
+      
+      <script>
+        document.querySelector('.subscribe-form').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the form from submitting in the traditional way
+      
+          // Show the modal popup
+          const modal = document.getElementById('popupModal');
+          modal.style.display = 'block';
+      
+          // Clear the input field
+          this.querySelector('input[type="email"]').value = '';
+      
+          // Hide the modal when the close button is clicked
+          const closeModal = document.querySelector('.modal .close');
+          closeModal.onclick = function() {
+            modal.style.display = 'none';
+          }
+        });
+      
+        // Hide the modal when clicking outside of it
+        window.onclick = function(event) {
+          const modal = document.getElementById('popupModal');
+          if (event.target == modal) {
+            modal.style.display = 'none';
+          }
+        }
+      </script>
+
     <script>
       VanillaTilt.init(document.querySelectorAll(".team-member"), {
         max: 25,
